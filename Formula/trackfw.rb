@@ -5,21 +5,21 @@
 class Trackfw < Formula
   desc "Governed software delivery framework: ADR → REQ → ROADMAP → kanban"
   homepage "https://github.com/kgsaran/trackfw"
-  version "9.0.1"
+  version "9.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kgsaran/trackfw/releases/download/v9.0.1/trackfw_9.0.1_darwin_amd64.tar.gz"
-      sha256 "724b04414603286d245614f64bec35771cc4a355e8116fc4cef87c1d1bf2d1d3"
+      url "https://github.com/kgsaran/trackfw/releases/download/v9.1.0/trackfw_9.1.0_darwin_amd64.tar.gz"
+      sha256 "e941192aaa558a00aec3dcdac021f4ae2064dc05000c0992ca558faee11f0d6a"
 
       define_method(:install) do
         bin.install "trackfw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kgsaran/trackfw/releases/download/v9.0.1/trackfw_9.0.1_darwin_arm64.tar.gz"
-      sha256 "e6361df2f037530bfa6b2320a9166c351171811dbe0bf86f8ca396a24370fd41"
+      url "https://github.com/kgsaran/trackfw/releases/download/v9.1.0/trackfw_9.1.0_darwin_arm64.tar.gz"
+      sha256 "acb6d17ed06349de9ee99b605e27c3e4456e7b29c16b6c41bb7ae63ec2f5bb63"
 
       define_method(:install) do
         bin.install "trackfw"
@@ -29,15 +29,15 @@ class Trackfw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kgsaran/trackfw/releases/download/v9.0.1/trackfw_9.0.1_linux_amd64.tar.gz"
-      sha256 "184e724bb24c422191a3b8439ac7c24248128b366d0e2fe3ea7ef3f47abc64dc"
+      url "https://github.com/kgsaran/trackfw/releases/download/v9.1.0/trackfw_9.1.0_linux_amd64.tar.gz"
+      sha256 "e8aeeb29b51db30e6ab21e655f77754ba1b4aab279ab881735aa85812bed3781"
       define_method(:install) do
         bin.install "trackfw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kgsaran/trackfw/releases/download/v9.0.1/trackfw_9.0.1_linux_arm64.tar.gz"
-      sha256 "0ec4dee907037be3999d3892a9bac0e3ae7732018b320f127ef2f91480244431"
+      url "https://github.com/kgsaran/trackfw/releases/download/v9.1.0/trackfw_9.1.0_linux_arm64.tar.gz"
+      sha256 "01d6d4451ae321a03f3feddf77fd0376f6edc49dd31b2671d8871df0e654ec99"
       define_method(:install) do
         bin.install "trackfw"
       end
